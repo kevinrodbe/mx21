@@ -1,0 +1,116 @@
+%adorno-torta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 20px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.product {
+  position: relative;
+  transition: all .5s;
+
+  &:hover {
+    box-shadow: 0 0 20px $plomo-sombra-1;
+  }
+}
+
+.wish-list__link {
+  position: relative;
+
+  &:hover {
+    .ico-love {
+      animation-timing-function: steps(28);
+      animation-name: heart-burst;
+      animation-duration: .8s;
+      animation-iteration-count: 1;
+      background-position: right;
+    }
+  }
+}
+
+.ico-love {
+  position: absolute;
+  background-image: url(../img/icos/love.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  height: 50px;
+  width: 50px;
+  left: 100%;
+  top: 50%;
+  transform: translate(0, -47.5%);
+}
+
+.product__body {
+  background-color: $blanco;
+  padding: 15px 0;
+}
+
+.product__img-box {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background-image: linear-gradient(to top, $blanco 0%, $secundario 100%);
+
+  &:hover {
+    .product__cta {
+      background-color: $blanco-sombra-1;
+
+      .btn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.product__cta {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .45s;
+
+  &::after {
+    @extend %adorno-torta;
+
+    background-image: url(../img/bg/up.png);
+    bottom: 0;
+  }
+
+  .btn {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+
+.product__img {
+  height: 250px;
+  width: auto;
+  max-width: none;
+}
+
+.product__name {
+  @include breakpoint(sm) {
+    min-height: 44px;
+  }
+}
+
+.product__price {
+  color: $secundario;
+  font-weight: bold;
+}
+
+@keyframes heart-burst {
+  0% {
+    background-position: left
+  }
+  100% {
+    background-position: right
+  }
+}

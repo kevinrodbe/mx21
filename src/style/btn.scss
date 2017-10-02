@@ -1,0 +1,23 @@
+.btn {
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0px 3px 15px $plomo-sombra-2;
+  cursor: pointer;
+  min-width: 200px;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  transition: all .4s;
+
+  &:hover {
+    box-shadow: 0px 3px 40px $plomo-1;
+  }
+}
+
+.btn--primary {
+  background-color: $primario;
+  color: $blanco;
+
+  &:hover {
+    color: $blanco;
+  }
+}

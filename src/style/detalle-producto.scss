@@ -1,0 +1,21 @@
+.producto-deta__img {
+  position: relative;
+
+  &::after,
+  &::before {
+    @extend %adorno-torta;
+
+    height: 40px;
+  }
+
+  &::after {
+    background-image: url(../img/bg/up.png);
+    bottom: 0;
+  }
+
+  &::before {
+    background-position: 0 100%;
+    background-image: url(../img/bg/down.png);
+    top: 0;
+  }
+}
