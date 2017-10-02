@@ -1,0 +1,40 @@
+@import 'variables';
+
+body {
+  background: $plomo1;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: responsive 16px 40px;
+  font-range: 480px 992px;
+}
+
+.box-login {
+  min-height: 350px;
+}
+
+.bg--circle {
+  position: relative;
+
+  &::before {
+    background-color: $celeste2;
+    border-radius: 50%;
+    content: "";
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    z-index: -1;
+  }
+
+}

@@ -1,0 +1,23 @@
+$primario: #00c1f2;
+$secundario: #EE25DD;
+
+$plomo1: #e2dada;
+$celeste2: rgba(145, 238, 238, 0.43);
+
+@mixin breakpoint($point) {
+  @if ($point == xxs) { /* mobile L */
+    @media (min-width: 425px) { @content; }
+  }
+
+  @else if ($point == sm) { /* tablets */
+    @media (min-width: 768px) { @content; }
+  }
+
+  @else if ($point == md) { /* desktops */
+    @media (min-width: 992px) { @content; }
+  }
+
+  @else if ($point == lg) { /* large desktops */
+    @media (min-width: 1200px) { @content; }
+  }
+}
