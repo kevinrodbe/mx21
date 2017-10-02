@@ -99,4 +99,6 @@ gulp.task('miron', function() {
   gulp.watch('*.html').on('change', browserSync.reload)
 });
 
-gulp.task('default', ['css', 'img', 'fonts', 'mxserver', 'miron']);
+gulp.task('build', ['css', 'img', 'fonts']);
+
+gulp.task('default', ['build', 'mxserver', 'miron']);
