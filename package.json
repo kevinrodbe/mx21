@@ -4,9 +4,8 @@
   "description": "intro al mundo del front",
   "main": "index.js",
   "scripts": {
-    "gh": "gulp build && cp *.html dist/ ",
-    "deploy": "cd dist && gh-pages -d ./",
-    "deploy2": "gh-pages -d ./"
+    "gh": "rm -rf gh && mkdir gh && gulp build && cp -avr dist gh/dist/ && cp *.html gh/",
+    "deploy": "gh-pages -d ./"
   },
   "keywords": [
     "mx",
