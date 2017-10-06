@@ -23,10 +23,6 @@ La parte del front será dividida en 2 partes:
 
 * Angular
 
-## Primeros pasos
-[Intro a HTML, CSS y SASS][tutoHTML1]
-[Intro a HTML, CSS][tutoHTML2]
-
 ## Pre-requisitios
 1. Elegir un editor de texto (Te recomiendo **VsCode**, por sus integraciones nativas y plugins)
 2. Instalar Node. Tenemos 2 formas de hacerlo:
@@ -41,6 +37,21 @@ npm install -g @angular/cli
 ```sh
 npm install -g @angular/cli
 ```
+
+El **código final** de la clase estará dentro de la carpeta `final`, y **lo que iremos avanzando** estará en la carpeta `clase`.
+
+Para levantar cualquiera de los avances:
+
+1. Tener instalado los pre-requisitos.
+2. Ubícate con la terminal dentro de esa carpeta
+3. npm install
+4. gulp
+5. Enjoy it 🎉
+
+## Primeros pasos
+* [Intro a HTML, CSS y SASS][tutoHTML1]
+* [Intro a HTML, CSS][tutoHTML2]
+
 ## Avance de las clases:
 
 ### 1era clase:
