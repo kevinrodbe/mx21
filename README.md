@@ -12,16 +12,14 @@ La parte del front será dividida en 2 partes:
 
 * Maquetación:
 
-    Usaremos:
-        - **SASS** para hacer CSS más fácil y con mucho menos líneas.
+  Usaremos:
+    - **SASS** para hacer CSS más fácil y con mucho menos líneas.
 
-        - **Gulp** para evitar hacer tareas manuales repetitivas. Por ejemplo:
+    - **Gulp** para evitar hacer tareas manuales repetitivas. Por ejemplo:
 
-            * Hacer nuestro CSS compatible con todos los navegadores
-
-            * Insertar plugins para escribir menos CSS (yey!)
-
-            * Crear un server para ver nuestro trabajo desde cualquier dispositivo en la misma red Wifi, y hacer actualizaciones automáticamente cada vez que hagamos cambios en nuestro código.
+      * Hacer nuestro CSS compatible con todos los navegadores
+      * Insertar plugins para escribir menos CSS (yey!)
+      * Crear un server para ver nuestro trabajo desde cualquier dispositivo en la misma red Wifi, y hacer actualizaciones automáticamente cada vez que hagamos cambios en nuestro código.
 
 * Angular
 
@@ -56,7 +54,7 @@ Nos mostrará algunas preguntas (le puedes dar full **[enter]**)
 ```sh
 npm init
 ```
-Así tendremos un resumen de nuestro proyecto, que permitirá a **NPM manejarlo**
+  Así tendremos un resumen de nuestro proyecto, que permitirá a **NPM manejarlo**
 
 3. Instalamos las dependencias que necesitaremos para este workshop
 ```sh
