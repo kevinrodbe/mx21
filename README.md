@@ -13,7 +13,6 @@ La parte del front será dividida en 2 partes:
 * Maquetación:
 
     Usaremos:
-
         - **SASS** para hacer CSS más fácil y con mucho menos líneas.
 
         - **Gulp** para evitar hacer tareas manuales repetitivas. Por ejemplo:
@@ -58,6 +57,7 @@ Nos mostrará algunas preguntas (le puedes dar full **[enter]**)
 npm init
 ```
 Así tendremos un resumen de nuestro proyecto, que permitirá a **NPM manejarlo**
+
 3. Instalamos las dependencias que necesitaremos para este workshop
 ```sh
 npm install --save-dev
