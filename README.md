@@ -43,9 +43,9 @@ El **código final** de la clase estará dentro de la carpeta `final`, y **lo qu
 Para levantar cualquiera de los avances:
 
 1. Tener instalado los pre-requisitos.
-2. Ubícate con la terminal dentro de esa carpeta
-3. npm install
-4. gulp
+2. Ubícate con la terminal dentro de esa carpeta y le das los siguientes comandos:
+3. `npm install`
+4. `gulp`
 5. Enjoy it 🎉
 
 ## Primeros pasos
