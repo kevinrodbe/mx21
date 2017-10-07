@@ -94,7 +94,7 @@ touch gulpfile.js
 
 Para más detalle de **Gulp**, te recomiendo este [artículo con el que aprendí Gulp][tutoGulp].
 
-El **código final** de nuestro archivo Gulp será:
+El **código final** de nuestro archivo `gulpfile.js` será:
 ```js
 var gulp = require('gulp');
 
