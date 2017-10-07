@@ -66,6 +66,8 @@ Nos mostrará algunas preguntas (le puedes dar full **[enter]**)
 ```sh
 npm init
 ```
+  Luego de terminar de responder, se creará el archivo `package.json` con toda nuestras respuestas.
+
   Así tendremos un resumen de nuestro proyecto, que permitirá a **NPM manejarlo**
 
 3. Instalamos las dependencias que necesitaremos para este workshop
@@ -74,8 +76,6 @@ npm install --save-dev
 # ó la forma corta
 npm i -D
 ```
-Luego de terminar de responder, se creará el archivo `package.json` con toda nuestras respuestas.
-
 > --save-dev indica que es una dependencia para desarrollo
 
 Podemos **instalarlos todos de golpe**
