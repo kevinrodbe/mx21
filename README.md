@@ -61,8 +61,9 @@ Para levantar cualquiera de los avances:
 ```sh
 mkdir mx21 && cd mx21
 ```
-2. Inicializamos nuestro proyecto. Le decimos a **NPM** que maneje esta carpeta.
-Nos mostrará algunas preguntas (le puedes dar full **[enter]**)
+2. Inicializamos nuestro proyecto.
+
+	Le decimos a **NPM** que maneje esta carpeta.	Nos mostrará algunas preguntas (le puedes dar full **[enter]**)
 ```sh
 npm init
 ```
