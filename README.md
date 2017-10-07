@@ -80,7 +80,7 @@ npm i -D
 
 Podemos **instalarlos todos de golpe**
 ```sh
-npm i -D gulp autoprefixer browser-sync gulp-cssnano gulp-postcss gulp-sass gulp-watch rucksack-css
+npm i -D gulp autoprefixer browser-sync gulp-cssnano gulp-postcss gulp-sass gulp-watch rucksack-css gulp-if gulp-load-plugins yargs npm-run-all
 ```
 Cuando termine de instalar, veremos que el archivo `package.json` se modificó y tiene listada en la sección `devDependencies` todas las dependencias instaladas.
 
