@@ -24,7 +24,7 @@ La parte del front será dividida en 2 partes:
 * Angular
 
 ## Pre-requisitios
-1. Elegir un editor de texto (Te recomiendo **VsCode**, por sus integraciones nativas y plugins)
+1. Elegir un editor de texto (Te recomiendo **VSCode**, por sus integraciones nativas y plugins)
 2. Instalar Node. Tenemos 2 formas de hacerlo:
 	* [node][nodeLink]: Descargas la versión Actual y le das **full next**
 	* [nvm][nvmLink]: Seguir las intrucciones y listo (por consola)
@@ -56,6 +56,8 @@ Para levantar cualquiera de los avances:
 ## Avance de las clases:
 
 ### 1era clase:
+
+Te recomiendo usar la `consola git bash` si usas windows.
 
 1. Creamos la carpeta en donde vamos a trabajar y nos ubicamos con el terminal.
 ```sh
