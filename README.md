@@ -28,6 +28,7 @@ La parte del front será dividida en 2 partes:
 2. Instalar Node. Tenemos 2 formas de hacerlo:
 	* [node][nodeLink]: Descargas la versión Actual y le das **full next**
 	* [nvm][nvmLink]: Seguir las intrucciones y listo (por consola)
+
 	Porque vamos a necesitar usar **NPM**, que es el manejador de paquetes para el desarrollo front.
 3. Gulp
 ```sh
