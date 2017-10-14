@@ -1,0 +1,73 @@
+<nav>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="nav__item">
+        <h1 class="logo-txt">
+          <a href="./">Mx21</a>
+        </h1>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="nav__item mr-4">
+          <a routerLink="/login" class="u-txt--no-decoration">
+            <span class="icon-profile-male"></span>
+          </a>
+        </div>
+        <div class="nav__item">
+          <div class="cart-dropdown">
+            <a href="javascript:void(0)" class="cart-dropdown__link u-txt--no-decoration">
+              <span class="icon-basket"></span>
+              <span class="nav__counter">4</span>
+            </a>
+            <div class="cart-dropdown__body">
+              <h5 class="dropdown__title">Mis compras</h5>
+              <ul class="cart-list">
+                <li class="cart-item d-flex justify-content-between align-items-center">
+                  <figure class="cart__img">
+                    <img src="./dist/img/productos/p5.jpg">
+                  </figure>
+                  <div class="cart__product-name">
+                    Candyneitor
+                  </div>
+                  <div class="text-right">
+                    <h5>S/.456</h5>
+                    <span>Cantidad: 4</span>
+                  </div>
+                </li>
+                <li class="cart-item d-flex justify-content-between align-items-center">
+                  <figure class="cart__img">
+                    <img src="./dist/img/productos/p4.jpg">
+                  </figure>
+                  <div class="cart__product-name">
+                    Mx Suprema
+                  </div>
+                  <div class="text-right">
+                    <h5>S/.785</h5>
+                    <span>Cantidad: 4</span>
+                  </div>
+                </li>
+                <li class="cart-item d-flex justify-content-between align-items-center">
+                  <figure class="cart__img">
+                    <img src="./dist/img/productos/p2.jpg">
+                  </figure>
+                  <div class="cart__product-name">
+                    Dona Mix
+                  </div>
+                  <div class="text-right">
+                    <h5>S/.978</h5>
+                    <span>Cantidad: 4</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="cart__subtotal d-flex justify-content-between align-items-center">
+                <h5 class=" ">Subtotal de 4 artículo(s)</h5> <h5 class=" ">S/.7369.00</h5>
+              </div>
+              <div class="text-center">
+                <a routerLink="/carrito" class="btn btn--primary">Ir al carrito</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
