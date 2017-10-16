@@ -32,11 +32,11 @@ La parte del front será dividida en 2 partes:
 	Porque vamos a necesitar usar **NPM**, que es el manejador de paquetes para el desarrollo front.
 3. Gulp
 ```sh
-npm install -g @angular/cli
+npm i gulp-cli -g
 ```
 4. Angular CLI
 ```sh
-npm install -g @angular/cli
+npm i -g @angular/cli
 ```
 
 El **código final** de la clase estará dentro de la carpeta `final`, y **lo que iremos avanzando** estará en la carpeta `clase`.
@@ -44,7 +44,7 @@ El **código final** de la clase estará dentro de la carpeta `final`, y **lo qu
 Para levantar cualquiera de los avances:
 
 1. Tener instalado los pre-requisitos.
-2. Ubícate con la terminal **dentro de la carpeta deseada** y le das los siguientes comandos:
+2. Ubícate con la terminal **dentro de la carpeta deseada** y ejecutas los siguientes comandos:
 3. `npm install`
 4. `gulp`
 5. Enjoy it 🎉
@@ -52,6 +52,7 @@ Para levantar cualquiera de los avances:
 ## Primeros pasos
 * [Intro a HTML, CSS y SASS][tutoHTML1]
 * [Intro a HTML, CSS][tutoHTML2]
+* [Intro a JS][tutoJS1]
 
 ## Avance de las clases:
 
