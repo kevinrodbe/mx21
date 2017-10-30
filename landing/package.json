@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:prod": "webpack -p",
-    "start": "webpack-dev-server --open",
-    "deploy:build": "rm -rf gh && mkdir gh && webpack -p && cp -avr dist gh/dist/ && cp *.html gh/",
-    "gh": "cd gh && gh-pages -d ./",
-    "deploy": "run-s deploy:build gh"
+    "start": "webpack-dev-server --open"
   },
   "author": "",
   "license": "ISC",
