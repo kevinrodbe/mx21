@@ -75,7 +75,7 @@ a {
     display: inline-block;
     position: relative;
 
-    @include z-index(15);
+    @include z-index(13);
 
     @extend %txt-shadow-5;
 
