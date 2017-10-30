@@ -1,8 +1,7 @@
 var gulp = require('gulp');
-
 /*
   Vamos a usar esta lib "gulp-load-plugins" para abrir todos "los plugins" de gulp.
-  Asi evitaremos hacer la "tipica declaracion:
+  Asi evitaremos hacer la "tipica declaracion":
 
     var sass = require('gulp-sass');
 

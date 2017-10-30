@@ -56,11 +56,15 @@ Para levantar la tienda en Angular 4:
 3. `npm install`
 4. `npm start`
 5. Enjoy it 🎉
-1.
+
 ## Primeros pasos
 * [Intro a HTML, CSS y SASS][tutoHTML1]
 * [Intro a HTML, CSS][tutoHTML2]
-* [Intro a JS][tutoJS1]
+* [Intro a JS*][tutoJS1]
+* [Intro a ES6*][tutoES6]
+* [Intro a Angular*][tutoNg4]
+
+*: Recomendado revisar antes de las clases
 
 ## Avances de las clases:
 1. [Workflow con Gulp][clase1]
@@ -70,6 +74,8 @@ Para levantar la tienda en Angular 4:
 [tutoHTML1]: <http://marksheet.io/>
 [tutoHTML2]: <https://learn.shayhowe.com/>
 [tutoJS1]: <https://www.youtube.com/watch?v=le-URjBhevE&list=PLWKjhJtqVAbk2qRZtWSzCIN38JC_NdhW5>
+[tutoNg4]: <https://www.youtube.com/watch?v=KhzGSHNhnbI&list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8>
+[tutoES6]: <https://www.youtube.com/watch?v=2LeqilIw-28&list=PLillGF-RfqbZ7s3t6ZInY3NjEOOX7hsBv>
 [nodeLink]: <https://nodejs.org/es/>
 [nvmLink]: <https://github.com/creationix/nvm#installation>
 
