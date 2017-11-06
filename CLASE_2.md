@@ -1,7 +1,7 @@
 # 2da clase: JS Fundamentals
 Luego haber conocido [los fundamentos de JS][tutoJS1], vamos a realizar algunos **ejercicios** para aplicar lo aprendido
 
-##1.- Condicionales
+## 1.- Condicionales
 - Crear el `obj persona` con las propiedades: `name`, `edad`, `casado`.
 - definir texto "estado civil" según su condición de "casado"
 ```js
@@ -32,7 +32,7 @@ let estadoCivil = 'está solano'
 persona.casado && (estadoCivil = 'está casado')
 
 ```
-##2.- Template String
+## 2.- Template String
 - imprimir los datos del obj
 ```js
 // imprimimos con la clásica concatenación (ES5)
@@ -41,7 +41,7 @@ console.info(persona['name'] + ' tiene ' + persona.edad + ' años y ' + estadoCi
 console.info(`${persona.name} tiene ${persona.edad} años y ${estadoCivil}`)
 ```
 
-##3- Funciones
+## 3- Funciones
 - crear una `función` para que se encarge de imprimir en consola
 ```js
 /*** definimos nuestra función "imprimir", que recibe como parámetro "objPersona" (que será nuestro objeto) ***/
@@ -70,7 +70,7 @@ function imprimir(objPersona) {
 imprimir(persona)
 ```
 
-##4- Object Assign
+## 4- Object Assign
 - modificar todas las `propiedades` de nuestro `obj persona`.
 ```js
 // forma 1: acceso directo a la propiedad mediante el "."
@@ -83,7 +83,7 @@ persona['edad'] = 33
 persona = Object.assign({}, persona, {casado: true})
 ```
 
-##5.- [Destructuring][tutoDestructuring]
+## 5.- [Destructuring][tutoDestructuring]
 - definir valores por defecto a las `propiedades del obj` recibido en la `función imprimir` para imprimir dichos valores
 
   los valores por defecto serán:
@@ -122,7 +122,7 @@ imprimirES6(persona) // imprimir los valores del obj
 imprimirES6() // imprimir los valores por defecto
 ```
 
-##6.- [Spread][tutoSpread]
+## 6.- [Spread][tutoSpread]
 - Crear una copia del `objeto persona`, luego modificar la propiedad `name`
 ```js
 // al trabajar con obj, esta forma no hace una copia; sino que crea una referencia al mismo objeto.
@@ -192,7 +192,7 @@ console.info(persona, ozarus1) // {name: 'Chacón', edad: 22, casado: false}
 console.info(ozarus2) // {name: 'richi', edad: 22, casado: false}
 ```
 
-##7.- Hoisting
+## 7.- Hoisting
 Es llamada a la acción cuando, las declaraciones (variables, funciones) son movidas a la parte superior de su `scope` (ámbito).
 ```js
 let a = 2
@@ -207,7 +207,7 @@ function foo() {
 console.info(a)	// 2
 ```
 
-##8.- Closures
+## 8.- Closures
 Una `función "A"` definida dentro de otra `función "B"`. Donde la `función interna "A"`, tiene acceso al scope (ámbito) de la `función contenedora "A"`.
 
 Además, la `función interna "A"`, recordará y podrá acceder a las variables de la `función contenedora "A"`, aún cuando la `función contenedora "A"` ya haya sido ejecutada.
@@ -231,7 +231,7 @@ add10(5) // 15 ... debido a 10 + 5
 add20(7) // 27
 ```
 
-##9.- Promesas
+## 9.- Promesas
 Representa un valor que puede estar disponible ahora, en el futuro, o nunca.
 
 El objeto `Promise` es usado para operaciones asíncronas.
