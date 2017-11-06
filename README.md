@@ -68,7 +68,7 @@ Para levantar la tienda en Angular 4:
 
 ## Avances de las clases:
 1. [Workflow con Gulp][clase1]
-2. [JS esencial][clase2]
+2. [JS Fundamentals][clase2]
 3. [Creación de la Cande Tienda][clase3]
 
 [tutoHTML1]: <http://marksheet.io/>

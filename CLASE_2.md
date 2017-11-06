@@ -1,7 +1,7 @@
-### 2da clase:
+# 2da clase: JS Fundamentals
 Luego haber conocido [los fundamentos de JS][tutoJS1], vamos a realizar algunos **ejercicios** para aplicar lo aprendido
 
-1.- Condicionales
+##1.- Condicionales
 - Crear el `obj persona` con las propiedades: `name`, `edad`, `casado`.
 - definir texto "estado civil" según su condición de "casado"
 ```js
@@ -32,7 +32,7 @@ let estadoCivil = 'está solano'
 persona.casado && (estadoCivil = 'está casado')
 
 ```
-2.- Template String
+##2.- Template String
 - imprimir los datos del obj
 ```js
 // imprimimos con la clásica concatenación (ES5)
@@ -41,7 +41,7 @@ console.info(persona['name'] + ' tiene ' + persona.edad + ' años y ' + estadoCi
 console.info(`${persona.name} tiene ${persona.edad} años y ${estadoCivil}`)
 ```
 
-3- Funciones
+##3- Funciones
 - crear una `función` para que se encarge de imprimir en consola
 ```js
 /*** definimos nuestra función "imprimir", que recibe como parámetro "objPersona" (que será nuestro objeto) ***/
@@ -70,7 +70,7 @@ function imprimir(objPersona) {
 imprimir(persona)
 ```
 
-4- Object Assign
+##4- Object Assign
 - modificar todas las `propiedades` de nuestro `obj persona`.
 ```js
 // forma 1: acceso directo a la propiedad mediante el "."
@@ -83,7 +83,7 @@ persona['edad'] = 33
 persona = Object.assign({}, persona, {casado: true})
 ```
 
-5.- [Destructuring][tutoDestructuring]
+##5.- [Destructuring][tutoDestructuring]
 - definir valores por defecto a las `propiedades del obj` recibido en la `función imprimir` para imprimir dichos valores
 
   los valores por defecto serán:
@@ -122,7 +122,7 @@ imprimirES6(persona) // imprimir los valores del obj
 imprimirES6() // imprimir los valores por defecto
 ```
 
-6.- [Spread][tutoSpread]
+##6.- [Spread][tutoSpread]
 - Crear una copia del `objeto persona`, luego modificar la propiedad `name`
 ```js
 // al trabajar con obj, esta forma no hace una copia; sino que crea una referencia al mismo objeto.
@@ -192,7 +192,7 @@ console.info(persona, ozarus1) // {name: 'Chacón', edad: 22, casado: false}
 console.info(ozarus2) // {name: 'richi', edad: 22, casado: false}
 ```
 
-7.- Hoisting
+##7.- Hoisting
 Es llamada a la acción cuando, las declaraciones (variables, funciones) son movidas a la parte superior de su `scope` (ámbito).
 ```js
 let a = 2
@@ -207,7 +207,7 @@ function foo() {
 console.info(a)	// 2
 ```
 
-8.- Closures
+##8.- Closures
 Una `función "A"` definida dentro de otra `función "B"`. Donde la `función interna "A"`, tiene acceso al scope (ámbito) de la `función contenedora "A"`.
 
 Además, la `función interna "A"`, recordará y podrá acceder a las variables de la `función contenedora "A"`, aún cuando la `función contenedora "A"` ya haya sido ejecutada.
@@ -231,106 +231,195 @@ add10(5) // 15 ... debido a 10 + 5
 add20(7) // 27
 ```
 
-9.- Promesas
+##9.- Promesas
+Representa un valor que puede estar disponible ahora, en el futuro, o nunca.
+
+El objeto `Promise` es usado para operaciones asíncronas.
+
+A través de su método `then`, podremos recibir un **valor** o **la razón** del por qué la promesa no pudo **ser cumplida**.
+
+Un ejemplo en la vida real usando promesas, sería:
+
+> Imagina que tu mamá te **promete** que te comprará un nuevo cel la próxima semana. Tu mamá puede comprarte el cel; o no, si es que ella no está contenta.
+
+Eso es una **promesa**. Y tiene **3 estados**:
+1. **fulfilled (cumplida)**: la acción relacionada con la promesa se completa con éxito.
+2. **rejected (rechazada)**: la acción relacionada con la promesa no se completa con éxito.
+3. **pending (pendiente)**: aún no se completa ni se rechaza.
+
+El ej. anterior, en JS sería:
+
+```js
+// definimos si mamá está feliz
+var isMomHappy = false
+
+// creamos la promesa y la instanciamos en la variable "willIGetNewPhone"
+var willIGetNewPhone = new Promise(
+  // el constructor de la promesa recibe una funcion (callback) con 2 parámetros (las funciones resolve y reject)
+  // esas 2 funciones, son las que resuelven o rechazan la promesa
+  function (resolve, reject) {
+    // en el callback se realizará un proceso asíncrono o síncrono (generalmente asícrono)
+    // para el ej, hacemos un proceso síncrono
+    if (isMomHappy) {
+      var phone = {
+        brand: 'Samsung',
+        color: 'black'
+      }
+      // invocamos a "resolve" con el valor de la variable "phone"
+      // esta será el valor de nuestra promesa
+      resolve(phone) // fulfilled
+    } else {
+      // rechazamos la promesa invocando a "reject"
+      // con una razón; en este caso, "un error, mom is not happy"
+      var reason = new Error('mom is not happy')
+      reject(reason) // reject
+    }
+  }
+)
+```
+Ahora que ya tenemos la promesa, usémosla!
+
+```js
+// llamamos a nuestra promesa
+var askMom = function () {
+  willIGetNewPhone
+    .then(function (fulfilled) {
+      // yeah!, obtenemos un nuevo cel
+      console.log(fulfilled) // output: { brand: 'Samsung', color: 'black' }
+    })
+    .catch(function (error) {
+      // oops, mamá no lo compró
+      console.log(error.message) // output: 'mom is not happy'
+    })
+}
+// como "isMomHappy" está inicializado con "false"; nuestra promesa será rechazada
+askMom() // output: 'mom is not happy'
+// cambia el valor de "isMomHappy", y ten un nuevo cel :)
+```
+
+Podemos concatenar los métodos `.then()`, pasándoles un valor o promesa
+
+En el ejm. siguiente, le pasaremos valores.
+
 ```js
 var promise = new Promise(
-	function(resolve, reject) {
-  	resolve(1);
-	}
-);
+  function(resolve, reject) {
+    resolve(1)
+  }
+)
 
 promise.then(function(val) {
-  console.log(val); // 1
-  return val + 2;
+  console.log(val) // 1
+  return val + 2
 }).then(function(val) {
-  console.log(val); // 3
+  console.log(val) // 3
 })
+```
+### ¿Por qué son importantes las promesas?
 
-// p q?
+`JavaScript` es de **un solo hilo**, es decir, dos porciones de secuencia de comandos no se pueden ejecutar al mismo tiempo, tienen que ejecutarse uno después del otro.
 
-// sync
+Veamos un ejm. de código síncrono y asíncrono
+
+```js
+/* sync */
 function add (num1, num2) {
-	return num1 + num2;
+  return num1 + num2
 }
-const result = add(1, 2); // lo obtenemos inmediato
+const result = add(1, 2) // lo obtenemos de inmediato
+console.log(result) // 3
 
-// async
-const result = getAddResultFromServer('http://www.example.com?num1=1&num2=2');
+/* async */
+const result = getAddResultFromServer('http://www.example.com?num1=1&num2=2')
 // obtenemos indefinido, pq necesitamos esperar por el resp del server
+console.log(result) // undefined
 
-// cb
+/* solucion usando callbacks (promises evitan el uso anidaciones de callbacks "callback hell") */
 function addAsync (num1, num2, callback) {
-	// use the famous jQuery getJSON callback API
-	return $.getJSON('http://www.example.com', {
-			num1: num1,
-			num2: num2
-	}, callback);
+  // use the famous jQuery getJSON callback API
+  return $.getJSON('http://www.example.com', {
+    num1: num1,
+    num2: num2
+  }, callback)
 }
 
 addAsync(1, 2, success => {
-	// callback
-	const result = success; // you get result = 3 here
-});
+  // callback
+  const result = success // obtenemos result = 3
+  console.log(result) // 3
+})
+```
 
+```js
 // 1 ej:
+// en la variable "partido10Octubre", almacenamos la referencia a una función, la cuál nos retornará un objeto "Promise"
 var partido10Octubre = function(isColombiaDerrotado) {
-	return new Promise(
-		function(resolve, reject) {
-			if (isColombiaDerrotado) {
-				var tablaPosiciones = {
-					uruguay: 32,
-					brazil: 30,
-					peru: 28,
-					argentina: 27
-				};
-				resolve(tablaPosiciones); // resolve
-			} else {
-				var reason = new Error('matemáticamente no se pudo');
-				reject(reason); // reject
-			}
-		}
-	);
+  return new Promise(
+    function(resolve, reject) {
+      if (isColombiaDerrotado) {
+        var tablaPosiciones = {
+          uruguay: 32,
+          brazil: 30,
+          peru: 28,
+          argentina: 27
+        }
+        resolve(tablaPosiciones) // promesa resuelta
+      } else {
+        var reason = new Error('matemáticamente no se pudo')
+        reject(reason) // promesa rechazada
+      }
+    }
+  )
 }
 
-var verPartido = function (resultadoPartido) {
-	partido10Octubre(resultadoPartido)
-		.then(msgToRusia)
+// en la variable "verPartido" almacenamos una referencia a una función anónima, la cuál invocará nuestra promesa ya creada
+var verPartido = function (isColombiaDerrotado) {
+  partido10Octubre(isColombiaDerrotado)
+    // pasamos como callback la funcion "msgToRusia" al método .then()
+    .then(msgToRusia)
     .then(function(resolve) {
-      // fuckYeah! vamos a Rusia
-      console.log(resolve);
+      // recibimos el valor de "message", ya que es el resultado de la promesa devuelta en el .then() anterior
+      console.log(resolve)
     })
     .catch(function(error) {
-      // será para la prox
-      console.log(error.message);
-    });
-};
+      // si la promesa es rechazada o ocurrió algún error
+      console.log(error)
+    })
+}
 
-// plus
+// definición de función
 function msgToRusia (marcador) {
-	var message = 'Hey Rusia, Perú logró tener ' + marcador.peru;
-	return Promise.resolve(message);
-};
+  var message = 'Hey Rusia, Perú logró tener ' + marcador.peru
+  // retornamos una promesa resuelta con el valor de "message"
+  return Promise.resolve(message)
+}
 
+verPartido(true) // Hey Rusia, Perú logró tener 28
+verPartido(false) // matemáticamente no se pudo
+```
+
+```js
 // 2 ej:
 var candeDelivery = new Promise(
   function(resolve, reject) {
+    // simulamos un llamado al servidor, el cual es un proceso asyn
+    // en este caso, resolveremos la promesa luego de 3 segundos
     setTimeout(function() {
-      resolve(10);
-    }, 3000);
+      resolve(10)
+    }, 3000)
   }
 )
 
 candeDelivery
   .then(function(time) {
-    console.log(time);
-    return time * 2;
+    console.log(time) // 10
+    return time * 2 // enviamos el resultado al siguiente .then()
   })
   .then(function(time) {
-    console.log(time);
-    return time * 3;
+    console.log(time) // 20
   })
   .catch(function(err) {
-    console.log(err);
+    console.log(err)
   })
 ```
 [readmeMain]: <README.md>
