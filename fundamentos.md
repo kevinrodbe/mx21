@@ -1,11 +1,11 @@
 # Cursos Fundamentos - Enjoy the journey 🎉
 ## Intro a la programación 🚀
   Curso completo y muy dinámico desde HTML, CSS; hasta JS y levantar un servidor con NODE JS.
-  - [Curso de programación básica - Español][curso_intro_programacion] (Require crear cuenta. Es gratis.) 💯
+  - [Curso de programación básica - Español][curso_intro_programacion] (Require crear cuenta. Es gratis.) 💯 *
 
 ## Intro a JS (ES5)🔥
-  - [Curso Fundamentos - Español][tuto_JS_1_ESP] (duración de 12 min aprox. por video) 💯
-  - [Curso Fundamentos - Inglés][tuto_JS_2_EN] (duración de 4 min aprox. por video) 💯
+  - [Curso Fundamentos - Español][tuto_JS_1_ESP] (duración de 12 min aprox. por video) 💯 *
+  - [Curso Fundamentos - Inglés][tuto_JS_2_EN] (duración de 4 min aprox. por video) 💯 *
 
   - **PLUS:** Guías de repaso:
     - [Capítulo introducción a JS - Inglés][book_JS_1_EN]
