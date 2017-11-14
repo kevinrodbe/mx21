@@ -4,14 +4,14 @@
   - [Curso de programación básica - Español][curso_intro_programacion] (Require crear cuenta. Es gratis.) 💯
 
 ## Intro a JS (ES5)🔥
-  - [Curso Fundamentos - Español][tuto_JS_1_ESP] (duración de 12 min aprox. por video)
-  - [Curso Fundamentos - Inglés][tuto_JS_2_EN] (duración de 4 min aprox. por video)
+  - [Curso Fundamentos - Español][tuto_JS_1_ESP] (duración de 12 min aprox. por video) 💯
+  - [Curso Fundamentos - Inglés][tuto_JS_2_EN] (duración de 4 min aprox. por video) 💯
 
   - **PLUS:** Guías de repaso:
     - [Capítulo introducción a JS - Inglés][book_JS_1_EN]
     - [Libro de introducción - Inglés][book_JS_2_EN]
 
-## Cursos complementarios:
+## Otros Cursos complementarios:
 
 ## Intro a HTML
   - [Curso Fundamentos HTML][tuto_HTML_1_ESP]
@@ -21,6 +21,8 @@
 
 ## Intro a CSS
   - [Curso Fundamentos CSS][tuto_CSS_1_ESP]
+
+💯 *: los links con este símbolo se recomiendan ver porque son muy didácticos.
 
 ## Mensaje a Obama 🙌
 [![Every body should learn how to program a computer][obama]][yt_1]
