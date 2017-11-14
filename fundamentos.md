@@ -1,5 +1,5 @@
 # Cursos Fundamentos - Enjoy the journey 🎉
-## Intro a la programación
+## Intro a la programación 🚀
   Si durante el curso de fundamentos de JS, surgen dudas; Este curso te ayudará con las bases de la programación.
   - [Curso de programación básica - Español][curso_intro_programacion] (Require crear cuenta. Es gratis.)
 
