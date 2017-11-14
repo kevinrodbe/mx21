@@ -1,14 +1,14 @@
 # Cursos Fundamentos - Enjoy the journey 🎉
 
-## Intro a JS 🔥
-  - [Curso Fundamentos (duración de 12 min aprox. por video) - Español][tuto_JS_1_ESP]
-  - [Curso Fundamentos (duración de 4 min aprox. por video) - Inglés][tuto_JS_2_EN]
+## Intro a JS (ES5)🔥
+  - [Curso Fundamentos - Español][tuto_JS_1_ESP] (duración de 12 min aprox. por video)
+  - [Curso Fundamentos - Inglés][tuto_JS_2_EN] (duración de 4 min aprox. por video)
 
-  - **PLUS** Guías de repaso/apoyo:
+  - **PLUS:** Guías de repaso:
     - [Capítulo introducción a JS - Inglés][book_JS_1_EN]
     - [Libro de introducción - Inglés][book_JS_2_EN]
 
-## PLUS ‼
+## Cursos complementarios:
 
 ## Intro a HTML
   - [Curso Fundamentos][tuto_HTML_1_ESP]
@@ -19,6 +19,7 @@
 ## Intro a CSS
   - [Curso Fundamentos][tuto_CSS_1_ESP]
 
+## Mensaje a Obama 🙌
 [![Every body should learn how to program a computer][obama]][yt_1]
 
 [tuto_HTML_1_ESP]: <https://www.youtube.com/watch?v=cqMfPS8jPys&list=PLhSj3UTs2_yVHt2DgHky_MzzRC58UHE4z>
