@@ -1,5 +1,5 @@
 # Cursos Fundamentos - Enjoy the journey 🎉
-## Intro a la programación 🚀
+## Despertanto al Dev que llevo dentro 🚀
   **Curso completo** y muy **dinámico** desde **algoritmos con JS** hasta levantar un **servidor con NODE JS**.
   - [Curso de programación - Español][curso_intro_programacion] (Require crear cuenta. **Es gratis**.) 💯 *
 
