@@ -19,7 +19,7 @@
 ## Intro a CSS
   - [Curso Fundamentos][tuto_CSS_1_ESP]
 
-[![Every body should learn how to program a computer][yt_1]][obama]
+[![Every body should learn how to program a computer][obama]][yt_1]
 
 [tuto_HTML_1_ESP]: <https://www.youtube.com/watch?v=cqMfPS8jPys&list=PLhSj3UTs2_yVHt2DgHky_MzzRC58UHE4z>
 [book_HTML_1_EN]: <http://marksheet.io/>
