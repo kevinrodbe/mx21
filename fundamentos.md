@@ -11,13 +11,13 @@
 ## Cursos complementarios:
 
 ## Intro a HTML
-  - [Curso Fundamentos][tuto_HTML_1_ESP]
+  - [Curso Fundamentos HTML][tuto_HTML_1_ESP]
 
-  - **PLUS** Guías de repaso:
+  - **PLUS:** Guías de repaso:
     - [Tutorial de HTML - CSS - SASS][book_HTML_1_EN]
 
 ## Intro a CSS
-  - [Curso Fundamentos][tuto_CSS_1_ESP]
+  - [Curso Fundamentos CSS][tuto_CSS_1_ESP]
 
 ## Mensaje a Obama 🙌
 [![Every body should learn how to program a computer][obama]][yt_1]
