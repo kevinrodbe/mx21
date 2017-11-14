@@ -24,7 +24,7 @@
 
 💯 *: los links con este símbolo se recomiendan ver porque son muy didácticos.
 
-## Mensaje a Obama 🙌
+## Mensaje de Obama 🙌
 [![Every body should learn how to program a computer][obama]][yt_1]
 
 [curso_intro_programacion]: <https://platzi.com/clases/programacion-basica/>
