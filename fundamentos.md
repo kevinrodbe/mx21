@@ -1,7 +1,7 @@
 # Cursos Fundamentos - Enjoy the journey 🎉
 ## Intro a la programación 🚀
-  Curso completo y muy dinámico desde algoritmos con JS hasta levantar un servidor con NODE JS.
-  - [Curso de programación - Español][curso_intro_programacion] (Require crear cuenta. Es gratis.) 💯 *
+  Curso **completo** y muy **dinámico** desde **algoritmos con JS** hasta levantar un **servidor con NODE JS**.
+  - [Curso de programación - Español][curso_intro_programacion] (Require crear cuenta. **Es gratis**.) 💯 *
 
 ## Intro a JS (ES5)🔥
   - [Curso Fundamentos - Español][tuto_JS_1_ESP] (duración de 12 min aprox. por video) 💯 *
