@@ -7,17 +7,36 @@
 </head>
 <body class="bg--textura">
   <video id="video" width="640" height="480" autoplay></video>
-  <button id="snap">Snap Photo 4</button>
+  <button id="snap">Snap Photo 6</button>
   <canvas id="canvas" width="640" height="480"></canvas>
+  <a href="cam2.html">go to cam 2</a>
   <script>
     var video = document.getElementById('video');
+
+    if('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices){
+      console.log("Let's get this party started")
+    }
 
     // Get access to the camera!
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       console.log(0)
         // Not adding `{ audio: true }` since we only want video now
         navigator.mediaDevices.getUserMedia(
-          { audio: true, video: { facingMode: "environment"  } }
+          {
+            video: {
+              width: {
+                min: 1280,
+                ideal: 1920,
+                max: 2560,
+              },
+              height: {
+                min: 720,
+                ideal: 1080,
+                max: 1440
+              },
+              facingMode: 'user'
+            }
+          }
         ).then(function(stream) {
             //video.src = window.URL.createObjectURL(stream);
             video.srcObject = stream;

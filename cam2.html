@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css">
+      .screenshot-image {
+        width: 150px;
+        height: 90px;
+        border-radius: 4px;
+        border: 2px solid whitesmoke;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        background: white;
+      }
+
+      .display-cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 5% auto;
+        position: relative;
+      }
+
+      video {
+        //margin: 5% auto;
+        width: 100%;
+        background: rgba(0,0,0,0.2);
+      }
+
+      .video-options {
+        position: absolute;
+        left: 20px;
+        top: 30px;
+      }
+
+      .controls {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+
+      }
+
+      .controls > button {
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        border-radius: 100%;
+        margin: 0 6px;
+        background: transparent;
+
+        &:hover {
+          svg {
+            color: white !important;
+          }
+        }
+      }
+
+
+      @media (min-width: 300px) and (max-width: 400px) {
+        .controls {
+          flex-direction: column;
+
+          button {
+            margin: 5px 0 !important;
+          }
+        }
+      }
+
+      .controls > button > svg {
+        height: 20px;
+        width: 18px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .controls button:nth-child(1) {
+        border: 2px solid #D2002E;
+
+        svg {
+          color: #D2002E;
+
+        }
+      }
+
+      .controls button:nth-child(2) {
+        border: 2px solid #008496;
+
+        svg {
+          color: #008496;
+        }
+      }
+
+      .controls button:nth-child(3) {
+        border: 2px solid #00B541;
+
+        svg {
+          color: #00B541;
+        }
+      }
+
+      .controls > button {
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        border-radius: 100%;
+        margin: 0 6px;
+        background: transparent;
+
+        &:hover {
+          svg {
+            color: white;
+          }
+        }
+      }
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+</head>
+<body class="bg--textura">
+  <div class="display-cover">
+    <video autoplay></video>
+    <canvas class="d-none"></canvas>
+
+    <div class="video-options">
+        <select name="" id="" class="custom-select">
+            <option value="">Select camera</option>
+        </select>
+    </div>
+
+    <img class="screenshot-image d-none" alt="">
+
+    <div class="controls">
+        <button class="btn btn-danger play" title="Play"><i data-feather="play-circle"></i></button>
+        <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause"></i></button>
+        <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i data-feather="image"></i></button>
+    </div>
+</div>
+
+
+
+    <script>
+    var video = document.getElementById('video');
+
+    if('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices){
+      console.log("Let's get this party started")
+    }
+
+    // Get access to the camera!
+    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      console.log(0)
+        // Not adding `{ audio: true }` since we only want video now
+        navigator.mediaDevices.getUserMedia(
+          { audio: true, video: { facingMode: "environment"  } }
+        ).then(function(stream) {
+            //video.src = window.URL.createObjectURL(stream);
+            video.srcObject = stream;
+            video.play();
+        }, errBack);
+    }
+
+     // Legacy code below: getUserMedia
+    else if(navigator.getUserMedia) { // Standard
+      console.log(1)
+        // navigator.getUserMedia({ video: true }, function(stream) {
+        //     video.src = stream;
+        //     video.play();
+        // }, errBack);
+    } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+      console.log(2)
+        // navigator.webkitGetUserMedia({ video: true }, function(stream){
+        //     video.src = window.webkitURL.createObjectURL(stream);
+        //     video.play();
+        // }, errBack);
+    } else if(navigator.mozGetUserMedia) { // Mozilla-prefixed
+      console.log(3)
+        // navigator.mozGetUserMedia({ video: true }, function(stream){
+        //     video.srcObject = stream;
+        //     video.play();
+        // }, errBack);
+    }
+
+
+  // Elements for taking the snapshot
+  var canvas = document.getElementById('canvas');
+  var context = canvas.getContext('2d');
+  var video = document.getElementById('video');
+
+  // Trigger photo take
+  document.getElementById("snap").addEventListener("click", function() {
+    context.drawImage(video, 0, 0, 640, 480);
+  });
+
+  function errBack (e) {
+    console.error(e);
+  }
+  </script>
+</body>
+</html>
