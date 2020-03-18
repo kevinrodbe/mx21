@@ -7,7 +7,7 @@
 </head>
 <body class="bg--textura">
   <video id="video" width="640" height="480" autoplay></video>
-  <button id="snap">Snap Photo 3</button>
+  <button id="snap">Snap Photo 4</button>
   <canvas id="canvas" width="640" height="480"></canvas>
   <script>
     var video = document.getElementById('video');
@@ -17,7 +17,7 @@
       console.log(0)
         // Not adding `{ audio: true }` since we only want video now
         navigator.mediaDevices.getUserMedia(
-          { audio: true, video: { facingMode: { exact: "environment" } } }
+          { audio: true, video: { facingMode: "environment"  } }
         ).then(function(stream) {
             //video.src = window.URL.createObjectURL(stream);
             video.srcObject = stream;
