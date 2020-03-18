@@ -7,7 +7,7 @@
 </head>
 <body class="bg--textura">
   <video id="video" width="640" height="480" autoplay></video>
-  <button id="snap">Snap Photo 10       </button>
+  <button id="snap">Snap Photo 11      </button>
   <canvas id="canvas" width="640" height="480"></canvas>
   <a href="cam2.html">go to cam 2</a>
   <a href="https://codepen.io/chrisbeast/pen/ebYwpX">dod epen</a>
@@ -39,7 +39,7 @@
       }
     }
 
-    navigator.mediaDevices.getUserMedia({ video: true })
+    navigator.mediaDevices.getUserMedia({ video: {facingMode: 'environment'} })
     .then(function(stream) {
       var video = document.querySelector('video');
       // Older browsers may not have srcObject
@@ -69,27 +69,28 @@
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
       console.log(0)
         // Not adding `{ audio: true }` since we only want video now
-        navigator.mediaDevices.getUserMedia(
-          {
-            video: {
-              width: {
-                min: 1280,
-                ideal: 1920,
-                max: 2560,
-              },
-              height: {
-                min: 720,
-                ideal: 1080,
-                max: 1440
-              },
-              facingMode: 'environment'
-            }
-          }
-        ).then(function(stream) {
-            //video.src = window.URL.createObjectURL(stream);
-            video.srcObject = stream;
-            video.play();
-        });
+        //
+        // navigator.mediaDevices.getUserMedia(
+        //   {
+        //     video: {
+        //       width: {
+        //         min: 1280,
+        //         ideal: 1920,
+        //         max: 2560,
+        //       },
+        //       height: {
+        //         min: 720,
+        //         ideal: 1080,
+        //         max: 1440
+        //       },
+        //       facingMode: 'environment'
+        //     }
+        //   }
+        // ).then(function(stream) {
+        //     //video.src = window.URL.createObjectURL(stream);
+        //     video.srcObject = stream;
+        //     video.play();
+        // });
     }
 
      // Legacy code below: getUserMedia
